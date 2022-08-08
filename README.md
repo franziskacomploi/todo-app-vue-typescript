@@ -1,6 +1,6 @@
-# Nuxt 3 Minimal Starter
+# ToDo App
 
-Look at the [nuxt 3 documentation](https://v3.nuxtjs.org) to learn more.
+Created with Nuxt3, Tailwind and Pinia.
 
 ## Setup
 
