@@ -21,6 +21,12 @@ const getters = {
     return (id: string) =>
       state.items.find((item) => !!item && (item as ToDo).id === id);
   },
+  getSortedTodos: (state: ToDoState) => {
+    return [...state.items].sort(
+      (a, b) =>
+        new Date(a.createdAt).getTime() - new Date(b.createdAt).getTime()
+    );
+  },
 };
 
 const actions = {};
