@@ -5,7 +5,6 @@ export interface ToDo {
   label: string;
   done: boolean;
   createdAt: Date;
-  updatedAt: Date;
 }
 
 export interface ToDoAdd {
@@ -40,7 +39,13 @@ const getters = {
 
 const actions = {
   add(todo: ToDoAdd) {
-    this.items.push(todo);
+    const todoItem = {
+      id: (this.items.length + 1).toString(),
+      label: todo.label,
+      done: false,
+      createdAt: new Date(),
+    };
+    this.items.push(todoItem);
   },
   delete(id: string) {
     this.items = this.items.filter((item) => item.id !== id);

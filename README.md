@@ -1,6 +1,6 @@
 # Simple ToDo App
 
-Created with Nuxt3 (Vue.js & Typescript), Tailwind and Pinia.
+Created with Nuxt3 (Vue.js & Typescript), Tailwind and Pinia. Vitest was used for testing.
 
 ## Setup
 
