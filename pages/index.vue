@@ -33,7 +33,7 @@ const saveTodo = () => {
 
 <style scoped>
 .home {
-  @apply w-full min-h-screen bg-gray-100;
+  @apply w-full min-h-screen bg-gradient-to-b from-cyan-100 to-blue-300;
 }
 .header {
   &__section {
@@ -41,7 +41,7 @@ const saveTodo = () => {
   }
 
   &__headline {
-    @apply text-4xl font-light text-cyan-600;
+    @apply text-4xl font-light text-cyan-800;
   }
 }
 .form {
